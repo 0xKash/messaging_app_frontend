@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 const ChatPreview = () => {
+  const navigate = useNavigate();
+
   return (
-    <div class="card bg-base-100 shadow-md transition hover:scale-101 m-20 p-10 flex items-center  flex-row">
+    <div
+      class="card bg-base-100 shadow-md transition hover:scale-101 m-20 p-10 flex items-center flex-row"
+      onClick={() => navigate("/chat")}
+    >
       <svg
         className="ml-10 mr-10 "
         xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-main shadow-md p-2 ">
-      <a className="btn btn-ghost text-xl">Kash.chat</a>
+      <a className="btn btn-ghost text-xl" href="/">
+        Kash.chat
+      </a>
       <button className="btn btn-ghost ml-auto mr-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
