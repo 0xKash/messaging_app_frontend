@@ -8,13 +8,15 @@ const Home = () => {
       <Navbar />
       <Modal />
 
-      <ChatPreview />
-      <ChatPreview />
-      <ChatPreview />
-      <ChatPreview />
-      <ChatPreview />
-      <ChatPreview />
-      <ChatPreview />
+      <div className="flex flex-col items-center pt-15">
+        <ChatPreview />
+        <ChatPreview />
+        <ChatPreview />
+        <ChatPreview />
+        <ChatPreview />
+        <ChatPreview />
+        <ChatPreview />
+      </div>
     </>
   );
 };

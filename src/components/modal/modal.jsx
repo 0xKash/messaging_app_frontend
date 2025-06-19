@@ -33,7 +33,12 @@ const Modal = () => {
               <input type="search" className="grow" placeholder="Search" />
             </label>
 
-            <button className="btn btn-soft btn-info ml-auto">Search</button>
+            <button
+              className="btn btn-soft btn-info ml-auto"
+              onClick={(e) => e.preventDefault()}
+            >
+              Search
+            </button>
 
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
