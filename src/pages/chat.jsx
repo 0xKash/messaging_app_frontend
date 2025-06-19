@@ -3,8 +3,18 @@ import ChatMessageStart from "../components/chat/chatmessagestart";
 import MessageInputField from "../components/chat/messageinputfield";
 import Navbar from "../components/navbar";
 import Modal from "../components/modal/modal";
+import { useEffect, useRef } from "react";
 
 const Chat = () => {
+  const bottom = useRef(null);
+
+  useEffect(() => {
+    bottom.current.scrollIntoView({
+      behavior: "instant",
+      block: "end",
+    });
+  }, []);
+
   return (
     <>
       <div className="h-screen">
@@ -87,7 +97,7 @@ const Chat = () => {
           pfp={"src/assets/default-profile.png"}
           content={":("}
         />
-        <div className="w-full h-20"></div>
+        <div className="w-full h-20" ref={bottom}></div>
         <div className="flex justify-center mt-100">
           <MessageInputField />
         </div>
