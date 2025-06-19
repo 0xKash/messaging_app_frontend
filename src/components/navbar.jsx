@@ -1,12 +1,13 @@
-import { useNavigate } from "react-router-dom";
-
 const Navbar = () => {
   return (
-    <div className="navbar bg-main shadow-md p-2 ">
+    <div className="navbar bg-base-100 shadow-md p-2 fixed top-0 z-999 ">
       <a className="btn btn-ghost text-xl" href="/">
         Kash.chat
       </a>
-      <button className="btn btn-ghost ml-auto mr-5">
+      <button
+        className="btn btn-ghost ml-auto mr-5"
+        onClick={() => document.getElementById("modal").showModal()}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24px"
