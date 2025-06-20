@@ -1,10 +1,10 @@
 const ProfileEditorComponent = () => {
   return (
-    <div className="border w-full sm:p-50 ">
-      <div className="flex shadow-md sm:p-20">
+    <div className="w-full h-screen p-50 ">
+      <div className="flex shadow-md h-full">
         <div className="avatar flex items-center ml-15">
           <div className="w-60 rounded-full">
-            <img src="src/assets/default-profile.png" />
+            <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
           </div>
         </div>
         <div className="flex flex-col justify-center ml-10 gap-15">
