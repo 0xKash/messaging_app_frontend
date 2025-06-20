@@ -1,7 +1,13 @@
+import Navbar from "../components/navbar";
+import ProfileEditorComponent from "../components/profile-editor/profile-editor-card";
+
 const ProfileEditor = () => {
-    return (
-        
-    )
+  return (
+    <>
+      <Navbar />
+      <ProfileEditorComponent />
+    </>
+  );
 };
 
 export default ProfileEditor;

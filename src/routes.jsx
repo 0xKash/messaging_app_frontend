@@ -2,6 +2,7 @@ import Home from "./pages/home";
 import Chat from "./pages/chat";
 import Register from "./pages/register";
 import Login from "./pages/login";
+import ProfileEditor from "./pages/profile-editor";
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/edit",
+    element: <ProfileEditor />,
   },
 ];
 
